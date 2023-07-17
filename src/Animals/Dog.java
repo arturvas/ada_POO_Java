@@ -2,15 +2,58 @@ package Animals;
 
 public class Dog {
 
-    public String name;
-    public String color;
-    public int height;
-    public double weight;
-    public int tailSize;
+    private String name;
+    private String color;
+    private int height;
+    private double weight;
+    private int tailSize;
+    private String mood;
 
-    public String mood;
+    public String getName(){
+        return this.name;
+    }
 
-//    Setting a method
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public int getTailSize() {
+        return tailSize;
+    }
+
+    public void setTailSize(int tailSize) {
+        this.tailSize = tailSize;
+    }
+
+    public String getMood() {
+        return mood;
+    }
+
+    //    Setting a method
 
     public void eat(){}
 
