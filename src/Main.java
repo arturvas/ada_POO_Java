@@ -20,6 +20,7 @@ public class Main {
         dog1.bark();
         System.out.println(dog1.name + " pegou uma " + dog1.take());
 
+        System.out.println(dog1.name + " está " + dog1.interact("grito"));
         System.out.println(dog1.name + " está " + dog1.interact("nada"));
         System.out.println(dog1.name + " está " + dog1.interact("carinho"));
         System.out.println(dog1.name + " está " + dog1.interact("comida"));
