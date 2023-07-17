@@ -24,14 +24,11 @@ public class Dog {
 
 //    Action defined
     public String interact(String action){
-        if (action.equals("comida")){
-            this.mood = "muito feliz";
-        } else if (action.equals("carinho")) {
-            this.mood = "feliz";
-        } else if (action.equals("grita")) {
-            this.mood = "triste";
-        } else{
-            this.mood = "quieto";
+        switch (action) {
+            case "carinho": this.mood = "feliz"; break;
+            case "comida": this.mood = "muito feliz"; break;
+            case "grito": this.mood = "triste"; break;
+            default: this.mood = "neutro"; break;
         }
         return mood;
     }
