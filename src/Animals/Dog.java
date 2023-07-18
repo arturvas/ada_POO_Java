@@ -1,7 +1,9 @@
 package Animals;
 
 public class Dog {
+
 //    attributes
+    static int numberOfDogs;
     private String name;
     private String color;
     private int height;
@@ -20,9 +22,19 @@ public class Dog {
         this.weight = weight;
         this.tailSize = tailSize;
         this.mood = mood;
+
+        numberOfDogs ++;
     }
 
     //    methods
+    public static int getNumberOfDogs() {
+        return numberOfDogs;
+    }
+
+    public static void setNumberOfDogs(int numberOfDogs) {
+        Dog.numberOfDogs = numberOfDogs;
+    }
+
     public String getName(){
         return this.name;
     }
@@ -67,7 +79,7 @@ public class Dog {
         return mood;
     }
 
-    //    Setting a method
+//    Setting a method
 
     public void eat(){}
 
