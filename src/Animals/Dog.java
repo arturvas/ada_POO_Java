@@ -1,7 +1,7 @@
 package Animals;
 
 public class Dog {
-
+//    attributes
     private String name;
     private String color;
     private int height;
@@ -9,6 +9,20 @@ public class Dog {
     private int tailSize;
     private String mood;
 
+//    default constructors
+    public Dog(){}
+
+//    additional constructors - add by the dev
+    public Dog(String name, String color, int height, double weight, int tailSize, String mood) {
+        this.name = name;
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+        this.tailSize = tailSize;
+        this.mood = mood;
+    }
+
+    //    methods
     public String getName(){
         return this.name;
     }
