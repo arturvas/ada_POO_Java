@@ -1,21 +1,16 @@
 package Animals;
 
-public class Dog {
+public class Dog extends Animal {
 
 //    attributes
     static int numberOfDogs;
-    private String name;
-    private String color;
-    private int height;
-    private double weight;
     private int tailSize;
-    private String mood;
 
 //    default constructors
-    public Dog(){}
 
 //    additional constructors - add by the dev
     public Dog(String name, String color, int height, double weight, int tailSize, String mood) {
+        super(name, color, weight);
         this.name = name;
         this.color = color;
         this.height = height;
@@ -80,13 +75,6 @@ public class Dog {
     }
 
 //    Setting a method
-
-    public void eat(){}
-
-    public void bark(){
-        System.out.println("Au! Au!");
-    }
-
     public String take(){
         return "bolinha";
     }
@@ -102,4 +90,8 @@ public class Dog {
         return mood;
     }
 
+    @Override
+    public void sound() {
+        System.out.println("Ouf Ouf");
+    }
 }
